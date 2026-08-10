@@ -1,0 +1,300 @@
+/* =========================================================
+   HERAID — mobile.css
+   Small screens, phones: max-width 767px
+   (base.css is mobile-first, this reinforces/refines phone-only rules)
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* ---- header ---- */
+  .header-inner {
+    height: 58px;
+  }
+
+  .logo span {
+    font-size: 1rem;
+  }
+
+  .main-nav {
+    display: none !important;
+  }
+
+  .donate-btn {
+    display: none !important;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .main-nav.nav-open {
+    display: flex !important;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: #fff;
+    padding: 16px;
+    gap: 16px;
+    border-bottom: 1px solid var(--color-card-border);
+    box-shadow: 0 12px 24px -12px rgba(26, 21, 35, 0.18);
+  }
+
+  .nav-toggle.is-active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .nav-toggle.is-active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle.is-active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* ---- hero ---- */
+  .hero {
+    padding: 28px 0 24px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-sub {
+    font-size: 0.92rem;
+  }
+
+  /* ---- contact section ---- */
+  .contact-section {
+    padding: 24px 0 48px;
+  }
+
+  .contact-grid {
+    gap: 24px;
+  }
+
+  .contact-info-col h2,
+  .form-card h2 {
+    font-size: 1.15rem;
+  }
+
+  .info-card {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .info-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .map-card {
+    height: 160px;
+  }
+
+  /* ---- form ---- */
+  .form-card {
+    padding: 18px;
+    border-radius: var(--radius-md);
+  }
+
+  .form-row {
+    gap: 0;
+  }
+
+  .send-btn {
+    width: 100%;
+  }
+
+  /* ---- about page: hero banner ---- */
+  .hero-banner {
+    min-height: 280px;
+  }
+
+  .hero-banner-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-banner-content p {
+    font-size: 0.88rem;
+  }
+
+  /* ---- about page: stats ---- */
+  .stats-section {
+    padding: 28px 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  /* ---- about page: sections ---- */
+  .section-block {
+    padding: 32px 0;
+  }
+
+  .section-header h2 {
+    font-size: 1.3rem;
+  }
+
+  /* ---- about page: purpose / values ---- */
+  .purpose-card {
+    padding: 20px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ---- about page: journey ---- */
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline-item::before {
+    left: -26px;
+  }
+
+  /* ---- about page: team ---- */
+  .team-grid {
+    gap: 28px;
+  }
+
+  /* ---- about page: cta ---- */
+  .cta-banner {
+    padding: 26px 20px;
+    text-align: left;
+  }
+
+  .cta-actions {
+    width: 100%;
+  }
+
+  .cta-actions .btn {
+    width: 100%;
+  }
+
+  /* ---- expanded footer ---- */
+  .site-footer--expanded {
+    padding: 36px 0 0;
+  }
+
+  .footer-columns {
+    gap: 28px;
+  }
+
+  .footer-bottom {
+    text-align: left;
+  }
+
+  /* ---- get involved: hero ---- */
+  .hero-banner--involve {
+    min-height: 340px;
+    padding: 0;
+  }
+
+  .hero-banner--involve .hero-banner-content {
+    padding: 22px 18px;
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  /* ---- get involved: choose your path ---- */
+  .path-grid {
+    gap: 16px;
+  }
+
+  .path-card {
+    padding: 22px;
+  }
+
+  /* ---- get involved: impact ---- */
+  .impact-grid {
+    gap: 24px;
+  }
+
+  .impact-photo-card {
+    min-height: 240px;
+  }
+
+  /* ---- get involved: process ---- */
+  .process-steps {
+    gap: 36px;
+    margin: 32px 0 28px;
+  }
+
+  .process-steps::before {
+    display: none;
+  }
+
+  /* ---- get involved: newsletter ---- */
+  .newsletter-banner {
+    padding: 28px 18px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  /* ---- footer bottom with social ---- */
+  .footer-bottom--with-social {
+    align-items: flex-start;
+  }
+
+  /* ---- programs page: hero ---- */
+  .programs-hero-full {
+    min-height: 380px;
+  }
+
+  .programs-hero-content {
+    padding: 44px 18px;
+  }
+
+  .programs-hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .programs-hero-buttons .btn {
+    width: 100%;
+  }
+
+  /* ---- programs page: stats ---- */
+  .hero-stats-float {
+    margin-top: -36px;
+    padding: 20px 16px;
+  }
+
+  /* ---- programs page: toolbar/grid ---- */
+  .program-grid {
+    gap: 16px;
+  }
+
+  /* ---- programs page: testimonial ---- */
+  .testimonial-grid {
+    gap: 24px;
+  }
+
+  /* ---- programs page: cta ---- */
+  .cta-simple-actions {
+    max-width: 100%;
+  }
+}
