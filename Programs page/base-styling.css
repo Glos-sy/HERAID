@@ -1,0 +1,112 @@
+/* =========================================================
+   variables.css
+   Design tokens + a lean reset. Loaded once, before any
+   breakpoint file, so every other stylesheet can rely on
+   these custom properties existing.
+   ========================================================= */
+
+:root {
+  /* Brand palette */
+  --color-primary: #E01178;
+  --color-primary-dark: #B80E62;
+  --color-primary-light: #FDEAF2;
+  --color-primary-soft: #FCE0EC;
+
+  /* Neutrals */
+  --color-text: #1B1A1E;
+  --color-text-secondary: #6E6C77;
+  --color-text-muted: #9997A3;
+  --color-white: #FFFFFF;
+  --color-bg-soft: #F8F7F9;
+  --color-bg-pink: #FBE9F1;
+  --color-border: #ECEAEF;
+
+  /* Overlays */
+  --color-overlay-dark: rgba(10, 8, 14, 0.55);
+  --color-overlay-darker: rgba(10, 8, 14, 0.75);
+
+  /* Typography */
+  --font-heading: "Poppins", "Segoe UI", sans-serif;
+  --font-body: "Inter", "Segoe UI", sans-serif;
+
+  /* Layout */
+  --container-width: 1200px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-card: 0 10px 30px rgba(27, 26, 30, 0.06);
+  --shadow-card-hover: 0 16px 40px rgba(27, 26, 30, 0.10);
+  --shadow-stats: 0 20px 45px rgba(27, 26, 30, 0.12);
+}
+
+/* ---------- Reset ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-white);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  line-height: 1.15;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Visible keyboard focus everywhere */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 4px;
+}

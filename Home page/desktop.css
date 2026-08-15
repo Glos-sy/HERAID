@@ -1,0 +1,86 @@
+/* =========================================================
+   HERAID — DESKTOP STYLES (min-width: 1025px)
+   ========================================================= */
+
+.container { padding-left: 40px; padding-right: 40px; }
+
+/* Header */
+.header-inner { height: 84px; }
+.logo-icon { font-size: 22px; }
+.logo-text { font-size: 20px; }
+.main-nav { gap: 40px; }
+.nav-link { font-size: 15px; }
+.nav-toggle { display: none; }
+.header-donate { padding: 14px 28px; font-size: 15px; }
+
+/* Hero */
+.hero { padding: 90px 0 100px; }
+.hero-inner { max-width: 860px; }
+.eyebrow { margin-bottom: 24px; font-size: 13px; }
+.hero-title { font-size: 58px; margin-bottom: 24px; }
+.hero-sub { font-size: 18px; max-width: 640px; margin-bottom: 40px; }
+.hero-actions { gap: 20px; }
+.btn { font-size: 16px; padding: 16px 32px; }
+
+/* Stats */
+.stats { padding: 64px 0; margin-top: -60px; position: relative; z-index: 2; }
+.stats-grid { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.stat-card { padding: 40px 24px; }
+.stat-icon { width: 56px; height: 56px; font-size: 24px; margin-bottom: 16px; }
+.stat-number { font-size: 40px; margin-bottom: 8px; }
+.stat-label { font-size: 15px; }
+
+/* Mission */
+.mission { padding: 100px 0; }
+.mission-inner { grid-template-columns: 1fr 1fr; gap: 80px; }
+.eyebrow-dark { margin-bottom: 16px; font-size: 13px; padding: 6px 16px; }
+.mission-text h2 { font-size: 38px; margin-bottom: 20px; }
+.mission-text > p { font-size: 16px; margin-bottom: 32px; max-width: 480px; }
+.mission-list { margin-bottom: 32px; display: flex; flex-direction: column; gap: 20px; }
+.mission-list strong { font-size: 17px; margin-bottom: 4px; }
+.mission-list p { font-size: 14px; }
+.link-arrow { font-size: 15px; }
+
+.mission-media {
+  grid-template-rows: 220px 150px;
+  gap: 20px;
+  height: 100%;
+}
+.media-heart { font-size: 32px; }
+.media-caption { padding: 24px; font-size: 20px; }
+.media-dark { padding: 24px; font-size: 15px; }
+.arch-icon { height: 40px; }
+
+/* Get Involved */
+.involved { padding: 100px 0; }
+.section-heading { max-width: 640px; margin-bottom: 56px; }
+.section-heading h2 { font-size: 36px; margin-bottom: 16px; }
+.section-heading p { font-size: 16px; }
+.involved-grid { grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.involved-card { padding: 32px; }
+.card-icons { margin-bottom: 24px; }
+.card-icon { width: 48px; height: 48px; font-size: 20px; }
+.involved-card h3 { font-size: 20px; margin-bottom: 12px; }
+.involved-card > p { font-size: 14.5px; margin-bottom: 20px; }
+
+/* Testimonial */
+.testimonial { padding: 90px 0; }
+.testimonial-inner { max-width: 760px; gap: 28px; }
+.quote-mark { font-size: 60px; }
+blockquote { font-size: 26px; }
+.testimonial-avatar { width: 64px; height: 64px; }
+
+/* Footer */
+.site-footer { padding-top: 72px; }
+.footer-inner { grid-template-columns: 1.2fr 2fr; gap: 60px; padding-bottom: 56px; }
+.footer-brand p { font-size: 14.5px; margin: 20px 0 24px; max-width: 380px; }
+.newsletter-form { max-width: 380px; gap: 10px; }
+.newsletter-form input { padding: 14px 20px; font-size: 14px; }
+.newsletter-form .btn { padding: 14px 24px; font-size: 14px; }
+.footer-links { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.footer-col { gap: 14px; }
+.footer-col h4 { font-size: 15px; margin-bottom: 6px; }
+.footer-col a { font-size: 14.5px; }
+.footer-bottom { padding: 24px 0; font-size: 14px; }
+.social-links { gap: 12px; }
+.social-links a { width: 36px; height: 36px; font-size: 14px; }

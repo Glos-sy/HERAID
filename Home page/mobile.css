@@ -1,0 +1,108 @@
+/* =========================================================
+   HERAID — MOBILE STYLES (max-width: 767px)
+   ========================================================= */
+
+.container { padding-left: 20px; padding-right: 20px; }
+
+/* Header */
+.header-inner { height: 64px; position: relative; flex-wrap: wrap; }
+.logo-icon { font-size: 18px; }
+.logo-text { font-size: 16px; }
+
+.nav-toggle { display: flex; order: 3; }
+
+.main-nav {
+  order: 4;
+  flex-basis: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+.main-nav.open { max-height: 320px; }
+
+.nav-link {
+  width: 100%;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 15px;
+}
+
+.header-donate { display: none; }
+
+/* Hero */
+.hero { padding: 40px 0 48px; }
+.hero-inner { max-width: 100%; }
+.eyebrow { margin-bottom: 16px; font-size: 11px; padding: 5px 12px; }
+.hero-title { font-size: 28px; margin-bottom: 16px; }
+.hero-sub { font-size: 14.5px; margin-bottom: 28px; }
+.hero-actions { gap: 12px; flex-direction: column; width: 100%; }
+.hero-actions .btn { width: 100%; }
+.btn { font-size: 14.5px; padding: 14px 22px; }
+
+/* Stats */
+.stats { padding: 32px 0; }
+.stats-grid { grid-template-columns: 1fr; gap: 12px; }
+.stat-card { padding: 22px 16px; }
+.stat-icon { width: 44px; height: 44px; font-size: 18px; margin-bottom: 10px; }
+.stat-number { font-size: 26px; margin-bottom: 4px; }
+.stat-label { font-size: 13px; }
+
+/* Mission */
+.mission { padding: 48px 0; }
+.mission-inner { grid-template-columns: 1fr; gap: 32px; }
+.mission-media { order: -1; }
+.eyebrow-dark { margin-bottom: 12px; font-size: 11px; padding: 5px 12px; }
+.mission-text h2 { font-size: 24px; margin-bottom: 14px; }
+.mission-text > p { font-size: 14px; margin-bottom: 20px; }
+.mission-list { margin-bottom: 20px; display: flex; flex-direction: column; gap: 14px; }
+.mission-list strong { font-size: 15px; margin-bottom: 3px; }
+.mission-list p { font-size: 13px; }
+.link-arrow { font-size: 14px; }
+
+.mission-media {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 160px 100px;
+  gap: 10px;
+}
+.media-heart { font-size: 22px; }
+.media-caption { padding: 14px; font-size: 15px; }
+.media-dark { padding: 14px; font-size: 11.5px; }
+.arch-icon { height: 24px; }
+
+/* Get Involved */
+.involved { padding: 48px 0; }
+.section-heading { margin-bottom: 32px; }
+.section-heading h2 { font-size: 24px; margin-bottom: 10px; }
+.section-heading p { font-size: 14px; }
+.involved-grid { grid-template-columns: 1fr; gap: 16px; }
+.involved-card { padding: 22px; }
+.card-icons { margin-bottom: 16px; }
+.card-icon { width: 40px; height: 40px; font-size: 16px; }
+.involved-card h3 { font-size: 17px; margin-bottom: 8px; }
+.involved-card > p { font-size: 13.5px; margin-bottom: 14px; }
+
+/* Testimonial */
+.testimonial { padding: 44px 0; }
+.testimonial-inner { max-width: 100%; gap: 16px; }
+.quote-mark { font-size: 36px; }
+blockquote { font-size: 16.5px; }
+.testimonial-avatar { width: 48px; height: 48px; }
+
+/* Footer */
+.site-footer { padding-top: 40px; }
+.footer-inner { grid-template-columns: 1fr; gap: 32px; padding-bottom: 32px; }
+.footer-brand p { font-size: 13.5px; margin: 14px 0 18px; }
+.newsletter-form { flex-direction: column; gap: 10px; }
+.newsletter-form input { padding: 13px 16px; font-size: 13.5px; width: 100%; }
+.newsletter-form .btn { padding: 13px 20px; font-size: 13.5px; width: 100%; }
+.footer-links { grid-template-columns: 1fr 1fr; gap: 22px; }
+.footer-col { gap: 10px; }
+.footer-col h4 { font-size: 14px; margin-bottom: 2px; }
+.footer-col a { font-size: 13.5px; }
+.footer-bottom { padding: 18px 0; font-size: 12.5px; flex-direction: column; gap: 12px; text-align: center; }
+.social-links { gap: 10px; }
+.social-links a { width: 32px; height: 32px; font-size: 12.5px; }

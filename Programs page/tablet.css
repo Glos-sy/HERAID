@@ -1,0 +1,259 @@
+/* =========================================================
+   tablet.css
+   Overrides applied at 768px and up. Loaded via
+   media="(min-width: 768px)" so it layers on top of
+   mobile.css. Tuned for the ~768–1023px tablet range,
+   and stays active (further refined) at desktop widths too.
+   ========================================================= */
+
+/* ---------- Navbar ---------- */
+.navbar {
+  padding: 24px 40px;
+}
+
+.navbar__links {
+  display: flex;
+  position: static;
+  flex-direction: row;
+  align-items: center;
+  gap: 28px;
+  background: none;
+  border-bottom: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.navbar__links .navbar__link {
+  padding: 0;
+  border-bottom: none;
+}
+
+.navbar__link {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+.navbar__link:hover { color: var(--color-text); }
+.navbar__link--active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.navbar__menu-btn {
+  display: none;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  min-height: 560px;
+  padding: 90px 40px 110px;
+}
+
+.hero__content {
+  max-width: 620px;
+}
+
+.hero__title {
+  font-size: 2.6rem;
+}
+
+.hero__subtitle {
+  font-size: 1rem;
+  max-width: 540px;
+}
+
+.hero__actions {
+  flex-direction: row;
+  max-width: none;
+}
+
+/* ---------- Stats ---------- */
+.stats {
+  flex-direction: row;
+  margin: -60px auto 0;
+  padding: 30px 20px;
+}
+
+.stats__card {
+  flex: 1;
+  padding: 10px 20px;
+}
+.stats__card + .stats__card {
+  border-top: none;
+  border-left: 1px solid var(--color-border);
+}
+
+.stats__number {
+  font-size: 2.1rem;
+}
+
+/* ---------- Programs ---------- */
+.programs {
+  padding: 110px 40px 80px;
+}
+
+.programs__header {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.filters {
+  overflow: visible;
+}
+
+.program-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+/* ---------- Testimonial ---------- */
+.testimonial {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 80px 40px;
+  text-align: left;
+}
+
+.testimonial__media {
+  max-width: 280px;
+  flex: none;
+}
+
+.testimonial__content {
+  text-align: left;
+  max-width: 480px;
+}
+
+.testimonial__text {
+  font-size: 1.4rem;
+}
+
+/* ---------- CTA ---------- */
+.cta {
+  padding: 90px 40px;
+  max-width: 640px;
+}
+
+.cta__title {
+  font-size: 2rem;
+}
+
+.cta__actions {
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  padding: 64px 40px 28px;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 28px;
+}
+
+.footer__col--brand {
+  grid-column: 1 / -1;
+}
+
+.footer__desc {
+  max-width: 420px;
+}
+
+.footer__bottom {
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+}
+
+/* =========================================================
+   ABOUT PAGE — tablet overrides (>=768px)
+   ========================================================= */
+
+.page-hero {
+  padding: 32px 40px 0;
+}
+.page-hero__frame {
+  min-height: 420px;
+}
+.page-hero__title {
+  font-size: 2.3rem;
+}
+.page-hero__subtitle {
+  font-size: 1rem;
+}
+
+.stats-inline {
+  grid-template-columns: repeat(4, 1fr);
+  padding: 56px 40px;
+  gap: 20px;
+}
+.stats-inline__number {
+  font-size: 2rem;
+}
+
+.purpose,
+.core-values,
+.journey,
+.team {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.purpose-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.values-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.journey-grid {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+.journey-intro {
+  flex: 0 0 260px;
+  position: sticky;
+  top: 24px;
+}
+.timeline {
+  flex: 1;
+}
+
+.team-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.join-cta {
+  padding: 30px 40px 90px;
+}
+.join-cta__inner {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+.join-cta__text {
+  max-width: 420px;
+}
+.join-cta__actions {
+  flex-direction: row;
+  flex: none;
+}
+
+.footer__grid--3col {
+  grid-template-columns: 1.4fr 1fr 1fr;
+}

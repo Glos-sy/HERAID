@@ -1,0 +1,175 @@
+/* =========================================================
+   desktop.css
+   Overrides applied at 1024px and up. Loaded via
+   media="(min-width: 1024px)", layering on top of both
+   mobile.css and tablet.css. Tuned for 1024px+ desktop
+   widths, capped by --container-width for very large screens.
+   ========================================================= */
+
+/* ---------- Navbar ---------- */
+.navbar__inner,
+.navbar {
+  padding-left: max(40px, calc((100% - var(--container-width)) / 2 + 40px));
+  padding-right: max(40px, calc((100% - var(--container-width)) / 2 + 40px));
+}
+
+.navbar__links {
+  gap: 40px;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  min-height: 640px;
+  padding: 110px 40px 130px;
+}
+
+.hero__content {
+  max-width: 700px;
+}
+
+.hero__title {
+  font-size: 3.4rem;
+}
+
+.hero__subtitle {
+  font-size: 1.05rem;
+  max-width: 620px;
+}
+
+/* ---------- Stats ---------- */
+.stats {
+  max-width: var(--container-width);
+  padding: 34px 30px;
+}
+
+.stats__number {
+  font-size: 2.4rem;
+}
+
+.stats__label {
+  font-size: 0.88rem;
+}
+
+/* ---------- Programs ---------- */
+.programs {
+  padding: 130px 40px 100px;
+}
+
+.section-title {
+  font-size: 2.1rem;
+}
+
+.program-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ---------- Testimonial ---------- */
+.testimonial {
+  gap: 80px;
+  padding: 100px 40px;
+}
+
+.testimonial__media {
+  max-width: 340px;
+}
+
+.testimonial__content {
+  max-width: 560px;
+}
+
+.testimonial__text {
+  font-size: 1.6rem;
+}
+
+/* ---------- CTA ---------- */
+.cta {
+  max-width: 720px;
+  padding: 110px 40px;
+}
+
+.cta__title {
+  font-size: 2.3rem;
+}
+
+/* ---------- Footer ---------- */
+.footer__grid {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+}
+
+.footer__col--brand {
+  grid-column: auto;
+}
+
+.footer__bottom {
+  max-width: var(--container-width);
+}
+
+/* =========================================================
+   ABOUT PAGE — desktop overrides (>=1024px)
+   ========================================================= */
+
+.page-hero {
+  padding: 40px 40px 0;
+}
+.page-hero__frame {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  min-height: 480px;
+}
+.page-hero__title {
+  font-size: 2.8rem;
+}
+.page-hero__content {
+  max-width: 720px;
+}
+
+.stats-inline {
+  padding: 64px 40px;
+}
+.stats-inline__number {
+  font-size: 2.3rem;
+}
+
+.purpose,
+.core-values,
+.journey,
+.team {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.purpose-grid,
+.values-grid,
+.journey-grid,
+.team-grid {
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+.purpose-grid,
+.values-grid,
+.team-grid {
+  margin-top: 36px;
+}
+
+.values-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.purpose-card {
+  padding: 32px 28px;
+}
+
+.join-cta {
+  padding: 40px 40px 110px;
+}
+.join-cta__title {
+  font-size: 1.7rem;
+}
