@@ -1,259 +1,146 @@
 /* =========================================================
-   tablet.css
-   Overrides applied at 768px and up. Loaded via
-   media="(min-width: 768px)" so it layers on top of
-   mobile.css. Tuned for the ~768–1023px tablet range,
-   and stays active (further refined) at desktop widths too.
+   HERAID — Programs — tablet.css
+   Tablets: 768px to 1023px
    ========================================================= */
 
-/* ---------- Navbar ---------- */
-.navbar {
-  padding: 24px 40px;
-}
+@media (min-width: 768px) and (max-width: 1023px) {
 
-.navbar__links {
-  display: flex;
-  position: static;
-  flex-direction: row;
-  align-items: center;
-  gap: 28px;
-  background: none;
-  border-bottom: none;
-  box-shadow: none;
-  padding: 0;
-}
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
-.navbar__links .navbar__link {
-  padding: 0;
-  border-bottom: none;
-}
+  /* ---- header ---- */
+  .header-inner {
+    height: 70px;
+  }
 
-.navbar__link {
-  color: var(--color-text-secondary);
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: color 0.15s ease;
-}
-.navbar__link:hover { color: var(--color-text); }
-.navbar__link--active {
-  color: var(--color-primary);
-  font-weight: 600;
-}
+  .main-nav {
+    display: flex;
+    gap: 20px;
+  }
 
-.navbar__menu-btn {
-  display: none;
-}
+  .main-nav a {
+    font-size: 0.88rem;
+  }
 
-/* ---------- Hero ---------- */
-.hero {
-  min-height: 560px;
-  padding: 90px 40px 110px;
-}
+  .donate-btn {
+    display: inline-flex;
+    padding: 9px 20px;
+  }
 
-.hero__content {
-  max-width: 620px;
-}
+  .nav-toggle {
+    display: none;
+  }
 
-.hero__title {
-  font-size: 2.6rem;
-}
+  /* ---- hero ---- */
+  .hero-full {
+    min-height: 480px;
+  }
 
-.hero__subtitle {
-  font-size: 1rem;
-  max-width: 540px;
-}
+  .hero-full-content {
+    padding: 90px 32px 64px;
+  }
 
-.hero__actions {
-  flex-direction: row;
-  max-width: none;
-}
+  .hero-full-content h1 {
+    font-size: 2.3rem;
+  }
 
-/* ---------- Stats ---------- */
-.stats {
-  flex-direction: row;
-  margin: -60px auto 0;
-  padding: 30px 20px;
-}
+  .hero-full-content p {
+    font-size: 1rem;
+  }
 
-.stats__card {
-  flex: 1;
-  padding: 10px 20px;
-}
-.stats__card + .stats__card {
-  border-top: none;
-  border-left: 1px solid var(--color-border);
-}
+  .hero-full-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
 
-.stats__number {
-  font-size: 2.1rem;
-}
+  /* ---- stats overlap ---- */
+  .stats-overlap-wrap {
+    margin-top: -44px;
+    padding: 0 32px;
+  }
 
-/* ---------- Programs ---------- */
-.programs {
-  padding: 110px 40px 80px;
-}
+  .stats-overlap-card {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 28px 24px;
+    gap: 24px;
+  }
 
-.programs__header {
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
-}
+  .stat-number {
+    font-size: 1.9rem;
+  }
 
-.filters {
-  overflow: visible;
-}
+  /* ---- section spacing ---- */
+  .section-block {
+    padding: 56px 0;
+  }
 
-.program-grid {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 26px;
-}
+  /* ---- programs header ---- */
+  .programs-section-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-/* ---------- Testimonial ---------- */
-.testimonial {
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  padding: 80px 40px;
-  text-align: left;
-}
+  /* ---- program cards ---- */
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
 
-.testimonial__media {
-  max-width: 280px;
-  flex: none;
-}
+  /* ---- testimonial ---- */
+  .testimonial-section {
+    padding: 56px 0;
+  }
 
-.testimonial__content {
-  text-align: left;
-  max-width: 480px;
-}
+  .testimonial-grid {
+    flex-direction: row;
+    align-items: center;
+    gap: 44px;
+    text-align: left;
+  }
 
-.testimonial__text {
-  font-size: 1.4rem;
-}
+  .testimonial-img {
+    max-width: 260px;
+    flex-shrink: 0;
+  }
 
-/* ---------- CTA ---------- */
-.cta {
-  padding: 90px 40px;
-  max-width: 640px;
-}
+  .testimonial-copy {
+    text-align: left;
+    flex: 1;
+  }
 
-.cta__title {
-  font-size: 2rem;
-}
+  /* ---- cta ---- */
+  .cta-center-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
 
-.cta__actions {
-  flex-direction: row;
-  justify-content: center;
-}
+  .cta-center-buttons .btn {
+    width: auto;
+  }
 
-/* ---------- Footer ---------- */
-.footer {
-  padding: 64px 40px 28px;
-}
+  /* ---- footer ---- */
+  .footer-columns {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+  }
 
-.footer__grid {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
-  gap: 28px;
-}
+  .footer-col-about {
+    flex: 1 1 100%;
+    margin-bottom: 8px;
+  }
 
-.footer__col--brand {
-  grid-column: 1 / -1;
-}
+  .footer-col {
+    flex: 1 1 28%;
+  }
 
-.footer__desc {
-  max-width: 420px;
-}
-
-.footer__bottom {
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: left;
-}
-
-/* =========================================================
-   ABOUT PAGE — tablet overrides (>=768px)
-   ========================================================= */
-
-.page-hero {
-  padding: 32px 40px 0;
-}
-.page-hero__frame {
-  min-height: 420px;
-}
-.page-hero__title {
-  font-size: 2.3rem;
-}
-.page-hero__subtitle {
-  font-size: 1rem;
-}
-
-.stats-inline {
-  grid-template-columns: repeat(4, 1fr);
-  padding: 56px 40px;
-  gap: 20px;
-}
-.stats-inline__number {
-  font-size: 2rem;
-}
-
-.purpose,
-.core-values,
-.journey,
-.team {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.purpose-grid {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-}
-
-.values-grid {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.journey-grid {
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 60px;
-  max-width: var(--container-width);
-  margin: 0 auto;
-}
-.journey-intro {
-  flex: 0 0 260px;
-  position: sticky;
-  top: 24px;
-}
-.timeline {
-  flex: 1;
-}
-
-.team-grid {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-}
-
-.join-cta {
-  padding: 30px 40px 90px;
-}
-.join-cta__inner {
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px;
-}
-.join-cta__text {
-  max-width: 420px;
-}
-.join-cta__actions {
-  flex-direction: row;
-  flex: none;
-}
-
-.footer__grid--3col {
-  grid-template-columns: 1.4fr 1fr 1fr;
+  .footer-bottom--with-social {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

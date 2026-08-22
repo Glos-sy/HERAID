@@ -3,412 +3,564 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HERAID — Transforming Maternal Healthcare Across Nigeria</title>
-
+    <title>Programs | HERAID</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Shared variables/reset, then mobile-first base, then progressively enhanced tablet/desktop overrides -->
     <link rel="stylesheet" href="./programs-base-styling.css" />
     <link rel="stylesheet" href="./programs-mobile.css" />
-    <link
-      rel="stylesheet"
-      href="./programs-tablet.css"
-      media="(min-width: 768px)"
-    />
-    <link
-      rel="stylesheet"
-      href="./programs-desktop.css"
-      media="(min-width: 1024px)"
-    />
+    <link rel="stylesheet" href="./programs-tablet.css" />
+    <link rel="stylesheet" href="./programs-desktop.css" />
   </head>
   <body>
-    <!-- ===== NAV ===== -->
-    <header class="navbar">
-      <a href="./index.html" class="navbar__logo">
-        <svg
-          class="navbar__logo-icon"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="logo">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="logo-icon"
+          >
+            <path
+              d="M12 21C12 21 3 15.5 3 9.5C3 6.5 5.5 4.5 8 4.5C10 4.5 11.5 5.5 12 7C12.5 5.5 14 4.5 16 4.5C18.5 4.5 21 6.5 21 9.5C21 15.5 12 21 12 21Z"
+              fill="#E31C79"
+            />
+          </svg>
+          <span>HERAID</span>
+        </a>
+        <nav class="main-nav" id="mainNav">
+          <a href="#">Homepage</a>
+          <a href="#">About Us</a>
+          <a href="#" class="active">Programs</a>
+          <a href="#">Get Involved</a>
+          <a href="#">Contact Us</a>
+        </nav>
+        <a href="#" class="btn btn-primary donate-btn">Donate</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="mainNav"
         >
-          <path
-            d="M12 21s-6.7-4.35-9.3-8.6C.7 8.7 2.4 4.9 6 4.1c2-.45 3.9.4 5 2 .9-1.5 2.9-2.4 5-2 3.6.8 5.3 4.6 3.3 8.3C18.7 16.65 12 21 12 21z"
-            fill="currentColor"
-          />
-        </svg>
-        HERAID
-      </a>
-      <nav class="navbar__links" aria-label="Primary">
-        <a href="./index.html" class="navbar__link">Homepage</a>
-        <a href="./about.html" class="navbar__link">About Us</a>
-        <a href="./programs.html" class="navbar__link navbar__link--active"
-          >Programs</a
-        >
-        <a href="./get-involved.html" class="navbar__link">Get Involved</a>
-        <a href="./contact.html" class="navbar__link">Contact Us</a>
-      </nav>
-      <button class="navbar__menu-btn" type="button" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </header>
 
     <!-- ===== HERO ===== -->
-    <section class="hero">
-      <div class="hero__overlay"></div>
-
-      <div class="hero__content">
-        <span class="badge">OUR MISSION IN ACTION</span>
-        <h1 class="hero__title">
-          Transforming Maternal Healthcare Across Nigeria
-        </h1>
-        <p class="hero__subtitle">
+    <section class="hero-full">
+      <img
+        src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=1600&q=80&auto=format&fit=crop"
+        alt="Group of Nigerian women in traditional dress"
+        class="hero-full-img"
+      />
+      <div class="hero-full-content">
+        <span class="hero-pill">OUR MISSION IN ACTION</span>
+        <h1>Transforming Maternal Healthcare Across Nigeria</h1>
+        <p>
           Explore our targeted initiatives dedicated to saving lives, empowering
           women, and building healthier communities through accessible
           resources.
         </p>
-        <div class="hero__actions">
-          <a href="./get-involved.html" class="btn btn--primary"
-            >Partner With Us <span aria-hidden="true">→</span></a
-          >
-          <a href="./about.html" class="btn btn--ghost">View Impact Report</a>
+        <div class="hero-full-buttons">
+          <a href="#" class="btn btn-primary">Partner With Us &rarr;</a>
+          <a href="#" class="btn btn-ghost">View Impact Report</a>
         </div>
       </div>
     </section>
 
-    <!-- ===== STATS BAR (overlaps hero bottom edge) ===== -->
-    <section class="stats" aria-label="Our impact so far">
-      <div class="stats__card">
-        <div class="stats__number">5,000+</div>
-        <div class="stats__label">Women Supported</div>
-      </div>
-      <div class="stats__card">
-        <div class="stats__number">1,200</div>
-        <div class="stats__label">Safe Birth Kits Distributed</div>
-      </div>
-      <div class="stats__card">
-        <div class="stats__number">50+</div>
-        <div class="stats__label">Communities Reached</div>
-      </div>
-    </section>
-
-    <!-- ===== PROGRAMS ===== -->
-    <section class="programs" id="programs">
-      <div class="programs__header">
-        <div>
-          <h2 class="section-title">Our Programs</h2>
-          <p class="section-subtitle">Browse initiatives by category</p>
+    <!-- ===== OVERLAPPING STATS CARD ===== -->
+    <div class="stats-overlap-wrap">
+      <div class="stats-overlap-card">
+        <div class="stat-item">
+          <span class="stat-number">5,000+</span>
+          <span class="stat-label">Women Supported</span>
         </div>
-        <div
-          class="filters"
-          role="tablist"
-          aria-label="Filter programs by category"
-        >
-          <button
-            class="filter filter--active"
-            type="button"
-            role="tab"
-            aria-selected="true"
-            data-filter="all"
-          >
-            All Programs
-          </button>
-          <button
-            class="filter"
-            type="button"
-            role="tab"
-            aria-selected="false"
-            data-filter="maternal"
-          >
-            Maternal Health
-          </button>
-          <button
-            class="filter"
-            type="button"
-            role="tab"
-            aria-selected="false"
-            data-filter="education"
-          >
-            Reproductive Ed
-          </button>
-          <button
-            class="filter"
-            type="button"
-            role="tab"
-            aria-selected="false"
-            data-filter="outreach"
-          >
-            Outreach
-          </button>
+        <div class="stat-item">
+          <span class="stat-number">1,200</span>
+          <span class="stat-label">Safe Birth Kits Distributed</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Communities Reached</span>
         </div>
       </div>
+    </div>
 
-      <div class="program-grid">
-        <article class="program-card" data-category="maternal">
-          <div class="program-card__media">
-            <img
-              src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=800&q=60"
-              alt="Sterile birth kit supplies laid out on a table"
-            />
-            <span class="tag tag--maternal">Maternal Health</span>
+    <!-- ===== OUR PROGRAMS ===== -->
+    <section class="section-block" id="programs">
+      <div class="container">
+        <div class="programs-section-header">
+          <div>
+            <h2>Our Programs</h2>
+            <p>Browse initiatives by category</p>
           </div>
-          <div class="program-card__body">
-            <h3 class="program-card__title">Safe Birth Kits</h3>
-            <p class="program-card__text">
-              Providing sterile, essential supplies for rural home births to
-              ensure safety for both mother and child, reducing infection rates.
-            </p>
-            <div class="progress">
-              <div class="progress__row">
-                <span>Goal: 2,000 Kits</span>
-                <span>60% Funded</span>
-              </div>
-              <div class="progress__track">
-                <div class="progress__fill progress__fill--60"></div>
-              </div>
+          <div class="filter-pills" id="filterPills">
+            <button class="filter-pill is-active" data-filter="all">
+              All Programs
+            </button>
+            <button class="filter-pill" data-filter="maternal-health">
+              Maternal Health
+            </button>
+            <button class="filter-pill" data-filter="reproductive-ed">
+              Reproductive Ed
+            </button>
+            <button class="filter-pill" data-filter="outreach">Outreach</button>
+          </div>
+        </div>
+
+        <div class="programs-grid" id="programsGrid">
+          <article class="program-card" data-category="maternal-health">
+            <div class="program-media">
+              <img
+                src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=700&q=80&auto=format&fit=crop"
+                alt="Sterile medical birth kit supplies"
+              />
+              <span class="program-tag">Maternal Health</span>
             </div>
-            <a href="#" class="learn-more"
-              >Learn more <span aria-hidden="true">→</span></a
-            >
-          </div>
-        </article>
+            <div class="program-body">
+              <h3>Safe Birth Kits</h3>
+              <p>
+                Providing sterile, essential supplies for rural home births to
+                ensure safety for both mother and child, reducing infection
+                rates.
+              </p>
+              <div class="program-progress">
+                <div class="program-progress-labels">
+                  <span>Goal: 2,000 Kits</span>
+                  <strong>60% Funded</strong>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 60%"></div>
+                </div>
+              </div>
+              <a href="#" class="program-link">Learn more &rarr;</a>
+            </div>
+          </article>
 
-        <article class="program-card" data-category="education">
-          <div class="program-card__media">
-            <img
-              src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=800&q=60"
-              alt="Young women attending a health education workshop"
-            />
-            <span class="tag tag--education">Education</span>
-          </div>
-          <div class="program-card__body">
-            <h3 class="program-card__title">Teen Health Workshops</h3>
-            <p class="program-card__text">
-              Interactive sessions educating young women on reproductive rights,
-              hygiene, and family planning to empower their future choices.
-            </p>
-            <p class="meta-line">
-              <span aria-hidden="true">🎓</span> 50+ Schools Reached
-            </p>
-            <a href="#" class="learn-more"
-              >Learn more <span aria-hidden="true">→</span></a
-            >
-          </div>
-        </article>
+          <article class="program-card" data-category="reproductive-ed">
+            <div class="program-media">
+              <img
+                src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=700&q=80&auto=format&fit=crop"
+                alt="Illustration of teen girls in a health workshop"
+              />
+              <span class="program-tag">Education</span>
+            </div>
+            <div class="program-body">
+              <h3>Teen Health Workshops</h3>
+              <p>
+                Interactive sessions educating young women on reproductive
+                rights, hygiene, and family planning to empower their future
+                choices.
+              </p>
+              <div class="program-meta">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 10L12 4L2 10L12 16L22 10Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6 12V17C6 17 8 19 12 19C16 19 18 17 18 17V12"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                50+ Schools Reached
+              </div>
+              <a href="#" class="program-link">Learn more &rarr;</a>
+            </div>
+          </article>
 
-        <article class="program-card" data-category="outreach">
-          <div class="program-card__media">
-            <img
-              src="https://images.unsplash.com/photo-1516315720917-231ef9acce8b?auto=format&fit=crop&w=800&q=60"
-              alt="Mobile clinic van parked at a rural village"
-            />
-            <span class="tag tag--outreach">Outreach</span>
-          </div>
-          <div class="program-card__body">
-            <h3 class="program-card__title">Mobile Midwife Clinic</h3>
-            <p class="program-card__text">
-              Bringing essential prenatal care, checkups, and professional
-              midwifery directly to remote villages with limited hospital
-              access.
-            </p>
-            <p class="meta-line">
-              <span aria-hidden="true">🚐</span> Weekly Visits
-            </p>
-            <a href="#" class="learn-more"
-              >Learn more <span aria-hidden="true">→</span></a
-            >
-          </div>
-        </article>
+          <article class="program-card" data-category="outreach">
+            <div class="program-media">
+              <img
+                src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=700&q=80&auto=format&fit=crop"
+                alt="Mobile midwife clinic van parked in a rural village"
+              />
+              <span class="program-tag">Outreach</span>
+            </div>
+            <div class="program-body">
+              <h3>Mobile Midwife Clinic</h3>
+              <p>
+                Bringing essential prenatal care, checkups, and professional
+                midwifery directly to remote villages with limited hospital
+                access.
+              </p>
+              <div class="program-meta">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 17H2V12L4 6H16L18 12V17H17"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <circle
+                    cx="7"
+                    cy="17"
+                    r="2"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <circle
+                    cx="15"
+                    cy="17"
+                    r="2"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path d="M4 12H18" stroke="currentColor" stroke-width="2" />
+                </svg>
+                Weekly Visits
+              </div>
+              <a href="#" class="program-link">Learn more &rarr;</a>
+            </div>
+          </article>
 
-        <article class="program-card" data-category="community">
-          <div class="program-card__media">
-            <img
-              src="https://images.unsplash.com/photo-1531983412531-1f49a365ffed?auto=format&fit=crop&w=800&q=60"
-              alt="Nurse handing a newborn to a new mother"
-            />
-            <span class="tag tag--community">Community</span>
-          </div>
-          <div class="program-card__body">
-            <h3 class="program-card__title">Postpartum Support</h3>
-            <p class="program-card__text">
-              A comprehensive support network for new mothers providing mental
-              health resources, breastfeeding guidance, and nutritional aid.
-            </p>
-            <p class="meta-line meta-line--avatars">
-              <span class="avatars" aria-hidden="true"
-                ><i></i><i></i><i></i><i>+12</i></span
-              >
-              Volunteers Needed
-            </p>
-            <a href="#" class="learn-more"
-              >Learn more <span aria-hidden="true">→</span></a
-            >
-          </div>
-        </article>
+          <article class="program-card" data-category="maternal-health">
+            <div class="program-media">
+              <img
+                src="https://images.unsplash.com/photo-1571772805064-207c8435df79?w=700&q=80&auto=format&fit=crop"
+                alt="Illustration of a nurse holding a newborn beside a mother"
+              />
+              <span class="program-tag">Community</span>
+            </div>
+            <div class="program-body">
+              <h3>Postpartum Support</h3>
+              <p>
+                A comprehensive support network for new mothers providing mental
+                health resources, breastfeeding guidance, and nutritional aid.
+              </p>
+              <div class="program-meta avatar-stack">
+                <span>Volunteers Needed</span>
+              </div>
+              <div class="avatar-stack-icons">
+                <span class="avatar-dot"></span>
+                <span class="avatar-dot"></span>
+                <span class="avatar-dot"></span>
+                <span class="avatar-dot avatar-dot--count">+12</span>
+              </div>
+              <a href="#" class="program-link">Learn more &rarr;</a>
+            </div>
+          </article>
 
-        <article class="program-card" data-category="training">
-          <div class="program-card__media">
-            <img
-              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=60"
-              alt="Two women reviewing training material together"
-            />
-            <span class="tag tag--training">Training</span>
-          </div>
-          <div class="program-card__body">
-            <h3 class="program-card__title">Worker Training</h3>
-            <p class="program-card__text">
-              Equipping local women with the medical knowledge and skills to
-              serve as first-response health workers in their own communities.
-            </p>
-            <p class="meta-line">
-              <span aria-hidden="true">✅</span> Certified Program
-            </p>
-            <a href="#" class="learn-more"
-              >Learn more <span aria-hidden="true">→</span></a
-            >
-          </div>
-        </article>
+          <article class="program-card" data-category="outreach">
+            <div class="program-media">
+              <img
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=700&q=80&auto=format&fit=crop"
+                alt="Health worker in training reviewing notes with a mentor"
+              />
+              <span class="program-tag">Training</span>
+            </div>
+            <div class="program-body">
+              <h3>Worker Training</h3>
+              <p>
+                Equipping local women with the medical knowledge and skills to
+                serve as first-response health workers in their own communities.
+              </p>
+              <div class="program-meta">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 15C15.3 15 18 12.3 18 9C18 5.7 15.3 3 12 3C8.7 3 6 5.7 6 9C6 12.3 8.7 15 12 15Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M9 13.5L7 21L12 18L17 21L15 13.5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Certified Program
+              </div>
+              <a href="#" class="program-link">Learn more &rarr;</a>
+            </div>
+          </article>
 
-        <article class="program-card" data-category="wellness">
-          <div class="program-card__media">
-            <img
-              src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=800&q=60"
-              alt="Basket of fresh vegetables and fruit"
-            />
-            <span class="tag tag--wellness">Wellness</span>
-          </div>
-          <div class="program-card__body">
-            <h3 class="program-card__title">Nutrition &amp; Supplements</h3>
-            <p class="program-card__text">
-              Distributing vital vitamins and food supplements to pregnant women
-              and children to combat malnutrition and ensure healthy
-              development.
-            </p>
-            <p class="meta-line">
-              <span aria-hidden="true">🚚</span> Monthly Deliveries
-            </p>
-            <a href="#" class="learn-more"
-              >Learn more <span aria-hidden="true">→</span></a
-            >
-          </div>
-        </article>
+          <article class="program-card" data-category="maternal-health">
+            <div class="program-media">
+              <img
+                src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=700&q=80&auto=format&fit=crop"
+                alt="Basket of fresh fruits and vegetables"
+              />
+              <span class="program-tag">Wellness</span>
+            </div>
+            <div class="program-body">
+              <h3>Nutrition &amp; Supplements</h3>
+              <p>
+                Distributing vital vitamins and food supplements to pregnant
+                women and children to combat malnutrition and ensure healthy
+                development.
+              </p>
+              <div class="program-meta">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="2"
+                    y="7"
+                    width="20"
+                    height="13"
+                    rx="2"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path d="M2 11H22" stroke="currentColor" stroke-width="2" />
+                  <path
+                    d="M9 7V5C9 3.9 9.9 3 11 3H13C14.1 3 15 3.9 15 5V7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                </svg>
+                Monthly Deliveries
+              </div>
+              <a href="#" class="program-link">Learn more &rarr;</a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- ===== TESTIMONIAL ===== -->
-    <section class="testimonial">
-      <div class="testimonial__media">
+    <section class="testimonial-section">
+      <div class="container testimonial-grid">
         <img
-          src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?auto=format&fit=crop&w=700&q=60"
-          alt="Mother holding her baby, smiling"
+          src="https://images.unsplash.com/photo-1594736797933-d0d62825a24e?w=600&q=80&auto=format&fit=crop"
+          alt="Illustration of a mother holding her baby"
+          class="testimonial-img"
         />
-      </div>
-      <div class="testimonial__content">
-        <span class="testimonial__quote-mark" aria-hidden="true">&ldquo;</span>
-        <blockquote class="testimonial__text">
-          The mobile clinic saved my baby&rsquo;s life. We live miles from the
-          nearest hospital, but HERAID brought the doctors to us.
-        </blockquote>
-        <p class="testimonial__author">Amina Bello</p>
-        <p class="testimonial__role">Beneficiary, Kaduna State</p>
+        <div class="testimonial-copy">
+          <span class="quote-mark">&ldquo;</span>
+          <blockquote>
+            The mobile clinic saved my baby's life. We live miles from the
+            nearest hospital, but HERAID brought the doctors to us.
+          </blockquote>
+          <span class="testimonial-name">Amina Bello</span>
+          <span class="testimonial-role">Beneficiary, Kaduna State</span>
+        </div>
       </div>
     </section>
 
     <!-- ===== CTA ===== -->
-    <section class="cta" id="cta">
-      <h2 class="cta__title">Ready to Make a Difference?</h2>
-      <p class="cta__text">
-        Your support fuels these programs. Whether you donate, volunteer, or
-        spread the word, you are helping to save lives in Nigeria.
-      </p>
-      <div class="cta__actions">
-        <a href="../Get-Involved Page/index.html" class="btn btn--primary"
-          ><span aria-hidden="true">♥</span> Donate Now</a
-        >
-        <a href="../Get-Involved Page/index.html" class="btn btn--outline"
-          >Become a Volunteer</a
-        >
+    <section class="cta-center-section">
+      <div class="container">
+        <h2>Ready to Make a Difference?</h2>
+        <p>
+          Your support fuels these programs. Whether you donate, volunteer, or
+          spread the word, you are helping to save lives in Nigeria.
+        </p>
+        <div class="cta-center-buttons">
+          <a href="#" class="btn btn-primary">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="white"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 21C12 21 3 13.5 3 8C3 4.5 5.5 2 8.5 2C10.5 2 11.5 3 12 4C12.5 3 13.5 2 15.5 2C18.5 2 21 4.5 21 8C21 13.5 12 21 12 21Z"
+              />
+            </svg>
+            Donate Now
+          </a>
+          <a href="#" class="btn btn-outline">Become a Volunteer</a>
+        </div>
       </div>
     </section>
 
     <!-- ===== FOOTER ===== -->
-    <footer class="footer" id="footer">
-      <div class="footer__grid">
-        <div class="footer__col footer__col--brand">
-          <a href="../index.html" class="navbar__logo footer__logo">
+    <footer class="site-footer site-footer--expanded">
+      <div class="container footer-columns">
+        <div class="footer-col footer-col-about">
+          <a href="#" class="logo">
             <svg
-              class="navbar__logo-icon"
+              width="18"
+              height="18"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
             >
+              <rect x="3" y="3" width="18" height="18" rx="4" fill="#E31C79" />
               <path
-                d="M12 21s-6.7-4.35-9.3-8.6C.7 8.7 2.4 4.9 6 4.1c2-.45 3.9.4 5 2 .9-1.5 2.9-2.4 5-2 3.6.8 5.3 4.6 3.3 8.3C18.7 16.65 12 21 12 21z"
-                fill="currentColor"
+                d="M12 7V17M7 12H17"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
               />
             </svg>
-            HERAID
+            <span>HERAID</span>
           </a>
-          <p class="footer__desc">
+          <p>
             Dedicated to transforming maternal and reproductive healthcare
             access across Nigeria through education, resources, and community
             support.
           </p>
         </div>
 
-        <nav class="footer__col" aria-label="Programs">
-          <h4 class="footer__heading">Programs</h4>
-          <ul class="footer__list">
-            <li><a href="./programs.html">Safe Birth Kits</a></li>
-            <li><a href="./programs.html">Mobile Clinics</a></li>
-            <li><a href="./programs.html">Teen Education</a></li>
-            <li><a href="./programs.html">Postpartum Care</a></li>
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="#">Safe Birth Kits</a></li>
+            <li><a href="#">Mobile Clinics</a></li>
+            <li><a href="#">Teen Education</a></li>
+            <li><a href="#">Postpartum Care</a></li>
           </ul>
-        </nav>
+        </div>
 
-        <nav class="footer__col" aria-label="Get Involved">
-          <h4 class="footer__heading">Get Involved</h4>
-          <ul class="footer__list">
-            <li><a href="./get-involved.html">Donate</a></li>
-            <li><a href="./get-involved.html">Volunteer</a></li>
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <ul>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="#">Partner With Us</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact-list">
             <li>
-              <a href="./get-involved.html">Partner with Us</a>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="2"
+                  y="4"
+                  width="20"
+                  height="16"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M2 6L12 13L22 6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <a href="mailto:hello@heraid.org">hello@heraid.org</a>
             </li>
-            <li><a href="./get-involved.html">Careers</a></li>
-          </ul>
-        </nav>
-
-        <div class="footer__col" aria-label="Contact">
-          <h4 class="footer__heading">Contact</h4>
-          <ul class="footer__list footer__list--contact">
-            <li><span aria-hidden="true">✉</span> heraidng.org@gmail.com</li>
-            <li><span aria-hidden="true">☎</span> +234 800 123 4567</li>
-            <li><span aria-hidden="true">📍</span> Lagos, Nigeria</li>
+            <li>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 16.92V19.92C22 20.47 21.55 20.92 21 20.9C10.4 20.28 2 11.87 1.38 1.28C1.35 0.73 1.8 0.28 2.35 0.28H5.35C5.85 0.28 6.28 0.65 6.34 1.15C6.47 2.29 6.72 3.4 7.08 4.46"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <a href="tel:+2348001234567">+234 800 123 4567</a>
+            </li>
+            <li>
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 22C12 22 19 16 19 10C19 5.58 15.42 2 11 2C6.58 2 3 5.58 3 10C3 16 12 22 12 22Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <circle
+                  cx="11"
+                  cy="10"
+                  r="3"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+              Lagos, Nigeria
+            </li>
           </ul>
         </div>
       </div>
 
-      <div class="footer__bottom">
-        <p>&copy; 2026 HERAID NGO. All rights reserved.</p>
-        <div class="footer__social" aria-label="Social media">
-          <a href="#" aria-label="LinkedIn">f</a>
-          <a href="https://x.com/heraidng?s=20" aria-label="Twitter">t</a>
-          <a
-            href="https://www.instagram.com/heraid.ng?igsh=cXN2OHdvbDZhM3o="
-            aria-label="Instagram"
-            >i</a
-          >
+      <div class="container footer-bottom footer-bottom--with-social">
+        <span>© 2024 HERAID NGO. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M14 9.5V7.5c0-1 .5-1.5 1.5-1.5H17V3h-2.5C12 3 11 5 11 7.3v2.2H8.5v3H11V21h3v-8.5h2.4l.6-3H14z"
+              />
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M23 4.98c-.9.4-1.8.7-2.8.8 1-.6 1.8-1.6 2.2-2.7-.9.6-2 1-3.1 1.2-.9-.9-2.2-1.5-3.6-1.5-2.7 0-4.9 2.2-4.9 4.9 0 .4 0 .8.1 1.1-4.1-.2-7.6-2.2-10-5.1-.4.7-.6 1.6-.6 2.5 0 1.7.8 3.2 2.2 4.1-.8 0-1.6-.2-2.2-.6v.1c0 2.4 1.7 4.4 3.9 4.8-.4.1-.8.2-1.3.2-.3 0-.6 0-.9-.1.6 2 2.4 3.4 4.6 3.4-1.7 1.3-3.8 2.1-6.1 2.1-.4 0-.8 0-1.2-.1 2.2 1.4 4.8 2.2 7.5 2.2 9 0 14-7.5 14-14v-.6c1-.7 1.8-1.6 2.5-2.6z"
+              />
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" />
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
 
-    <script src="./programs-script.js" defer></script>
-    <script src="./main.js"></script>
+    <script src="./programs-script.js"></script>
   </body>
 </html>
