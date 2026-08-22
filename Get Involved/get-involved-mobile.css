@@ -1,0 +1,194 @@
+/* ==========================================================================
+   HERAID — GET INVOLVED PAGE — MOBILE STYLES (max-width: 640px)
+   ========================================================================== */
+
+@media (max-width: 640px) {
+
+  .container {
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-size: 1.6rem !important;
+  }
+
+  /* -------- Header -------- */
+  .header-inner {
+    height: 64px;
+  }
+
+  .logo-text {
+    font-size: 1.05rem;
+  }
+
+  .main-nav {
+    top: 64px;
+    padding: 8px 20px 20px;
+    max-height: calc(100vh - 64px);
+  }
+
+  /* -------- Hero -------- */
+  .hero {
+    padding: 16px 0 0;
+  }
+
+  .hero-frame {
+    border-radius: var(--radius-md);
+    min-height: 480px;
+    align-items: flex-end;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(180deg, rgba(15, 23, 33, 0.35) 0%, rgba(15, 23, 33, 0.85) 75%);
+  }
+
+  .hero-inner {
+    padding: 28px 22px;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-sub {
+    font-size: 0.94rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  /* -------- Stats -------- */
+  .stats {
+    padding: 44px 0 24px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 16px;
+  }
+
+  .stat-number {
+    font-size: 1.9rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+
+  /* -------- Choose Your Path -------- */
+  .paths {
+    padding: 56px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 36px;
+  }
+
+  .paths-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .paths-grid .path-card:last-child {
+    grid-column: auto;
+    max-width: 100%;
+  }
+
+  .path-card {
+    padding: 28px 24px;
+  }
+
+  /* -------- Impact -------- */
+  .impact {
+    padding: 56px 0;
+  }
+
+  .impact-grid {
+    gap: 32px;
+  }
+
+  .slider-card {
+    padding: 22px;
+  }
+
+  .impact-photo {
+    min-height: 300px;
+    padding: 20px;
+  }
+
+  /* -------- Process -------- */
+  .process {
+    padding: 56px 0;
+  }
+
+  .process-steps {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 280px;
+  }
+
+  .process-line {
+    top: 0;
+    bottom: 0;
+    left: 32px;
+    right: auto;
+    width: 0;
+    height: auto;
+    border-top: none;
+    border-left: 2px dashed var(--color-border);
+  }
+
+  .step-circle {
+    width: 56px;
+    height: 56px;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+
+  .process-step p {
+    max-width: 100%;
+  }
+
+  .process-cta .btn {
+    width: 100%;
+  }
+
+  /* -------- Newsletter -------- */
+  .newsletter-cta {
+    padding: 56px 0;
+  }
+
+  .newsletter-box {
+    padding: 32px 22px;
+  }
+
+  .newsletter-box .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form .btn {
+    width: 100%;
+  }
+
+  /* -------- Footer -------- */
+  .site-footer {
+    padding: 48px 0 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,146 @@
+/* ==========================================================================
+   HERAID — GET INVOLVED PAGE — TABLET STYLES (max-width: 1024px)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+
+  .container {
+    padding: 0 28px;
+  }
+
+  /* -------- Header / Nav -------- */
+  .header-inner {
+    height: 72px;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 8px 28px 20px;
+    border-bottom: 1px solid var(--color-border);
+    transform: translateY(-12px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
+  }
+
+  .main-nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .header-donate {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  /* -------- Hero -------- */
+  .hero-frame {
+    min-height: 400px;
+  }
+
+  .hero-inner {
+    padding: 40px;
+    max-width: 480px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  /* -------- Stats -------- */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 24px;
+  }
+
+  /* -------- Choose Your Path -------- */
+  .paths {
+    padding: 72px 0;
+  }
+
+  .paths-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .paths-grid .path-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  /* -------- Impact -------- */
+  .impact {
+    padding: 72px 0;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .impact-text > p {
+    max-width: 100%;
+  }
+
+  .impact-photo {
+    min-height: 340px;
+  }
+
+  /* -------- Process -------- */
+  .process {
+    padding: 72px 0;
+  }
+
+  .process-steps {
+    max-width: 100%;
+  }
+
+  .process-line {
+    left: 16%;
+    right: 16%;
+  }
+
+  /* -------- Newsletter -------- */
+  .newsletter-cta {
+    padding: 72px 0;
+  }
+
+  .newsletter-box {
+    padding: 44px 36px;
+  }
+
+  /* -------- Footer -------- */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 24px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-brand p {
+    max-width: 100%;
+  }
+}
